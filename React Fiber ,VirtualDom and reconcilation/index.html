@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualDom,Fiber and reconcilation:Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>        <h1>VirtualDom,react Fiber and Reconcilation:Summary</h1>
+    </nav>
+    <div class="container">
+        
+        <section>
+            <h2>Introduction to React Fiber</h2>
+            <p>React Fiber is a reimplementation of React's core algorithm that optimizes performance for areas like animations, layout, and gestures. 
+            It introduces incremental rendering, which allows React to handle rendering work in smaller chunks across multiple frames, significantly enhancing efficiency.</p>
+        </section>
+        
+        <section>
+            <h2>The Need for Scheduling in React</h2>
+            <p>Scheduling is the process of determining <span class="highlight">when work should happen</span>. 
+            In a UI, not every update needs to be applied immediately, as it may cause frame drops and degrade user experience. 
+            React Fiber's scheduling capabilities allow for delayed updates, prioritization of animations, and improved rendering efficiency.</p>
+        </section>
+
+        <section>
+            <h2>What Are Fibers?</h2>
+            <p>A "<span class="highlight">fiber</span>" is a unit of work in React Fiber's architecture, similar to a virtual stack frame that enables the framework to control and prioritize tasks. 
+            With fibers, React can <span class="highlight">pause, resume, or cancel work</span> as needed, ensuring smooth performance and responsiveness.</p>
+        </section>
+
+        <section>
+            <h2>Key Concepts: Reconciliation and the Virtual DOM</h2>
+            <p><span class="highlight">Reconciliation</span> is the algorithm that React uses to determine which parts of the UI need updating, enabling efficient updates without re-rendering the entire application. This process is closely tied to the <span class="highlight">virtual DOM</span>, a concept that allows React to keep a representation of the UI in memory to minimize direct interactions with the real DOM, improving performance.</p>
+        </section>
+
+        <section>
+            <h2>Key Benefits of React Fiber</h2>
+            <ul>
+                <li>Enables smoother animations and transitions.</li>
+                <li>Improves efficiency in updating only the necessary parts of the UI.</li>
+                <li>Allows React to prioritize user interactions over background updates.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Further Reading</h2>
+            <p>For more details, check out the official <a href="https://reactjs.org/docs/faq-internals.html">React Documentation</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
